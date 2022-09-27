@@ -16,7 +16,6 @@ function create(req, res) {
   })
 }
 
-function
 
 export {
   newFlight as new,
