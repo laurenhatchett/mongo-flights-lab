@@ -1,4 +1,4 @@
-import { Flight } from '../models/flight.js'
+import { Flight } from "../models/flight.js"
 
 function newFlight(req,res) {
   res.render('flights/new', {
@@ -31,8 +31,23 @@ function index(req, res) {
   })
 }
 
+function show(req, res) {
+  Flight.findById(req.params.id)
+  .then(flight => {
+    res.render('flights/show', {
+      title: 'Flight Detail',
+      flight: flight
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
 export {
   newFlight as new,
-create,
-index,
+  create,
+  index,
+  show,
 }
