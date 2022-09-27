@@ -1,24 +1,27 @@
-<!-- <table id="list">
+<table id="list">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Release Year</th>
-      <th></th>
-      <th></th>
+      <th class="title">Airline</th>
+      <th class="title">Airport</th>
+      <th class="title">Flight No.</th>
+      <th class="title">Departing Date</th>
+      <th class="title">Time</th>
+      <th class="title"></th>
     </tr>
   </thead>
   <tbody>
-    <% movies.forEach((movie) => { %>
+    <% flights.forEach((flight) => { %>
     <tr>
-      <td><%= movie.title %></td>
-      <td><%= movie.releaseYear %></td>
-      <td><a href="/movies/<%= movie._id %>">DETAILS</a></td>
-      <td>
-        <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+      <td class="airline"><%= flight.airline %></td>
+      <td class="airport"><%= flight.airport %></td>
+      <td class="flightNo"></td>
+      <td class="departing-Date"></td>
+      <td class="departing-Time"></td>
+      <td class="details"><a href="/flights/<%= flight._id %>">DETAILS</a></td>
+    <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST">
           <button>X</button>
-        </form>
-      </td>
+    </form>
     </tr>
     <% }) %>
   </tbody>
-</table> -->
+</table>
