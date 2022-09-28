@@ -11,7 +11,8 @@ const ticketSchema = new Schema ({
   price: {
     type: Number,
     min: 0
-  }  
+  },
+  //timestamps: true  
 })
 
 const flightSchema = new Schema({
@@ -22,7 +23,7 @@ const flightSchema = new Schema({
   airport: {
     type:String,
     enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'],
-    default:['DEN']
+    default:'DEN'
   },
   flightNo: { 
     type:Number, 
@@ -32,8 +33,11 @@ const flightSchema = new Schema({
   departs: {
     type: Date
   },
-  ticket: [ticketSchema]
+  tickets:[ticketSchema],
+}, {
+  //timestamps: true
 })
+
 
 const Flight = mongoose.model('Flight', flightSchema)
 
