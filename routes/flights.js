@@ -26,8 +26,8 @@ router.put('/:id', flightsCtrl.update)
 //DELETE /flights/:id
 router.delete('/:id', flightsCtrl.delete)
 
-//DELETE /flights/:flightsId/tickets/:ticketId
-router.delete('')
+//DELETE /flights/:flightId/tickets/:ticketId
+router.delete('/:flightId/tickets/:ticketId', flightsCtrl.deleteTicket)
 
 
 
