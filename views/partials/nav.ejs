@@ -2,6 +2,12 @@
 <body>
   <nav>
     <a 
+			href="/meals/new"
+			<%- title === 'Add Meal' ? 'class="active"' : '' %>
+		>
+			ADD MEAL
+		</a>
+    <a 
       href="/flights/new" <%- title === 'Flights' ? 'class="active"' : '' %>
     >
       ADD FLIGHT
