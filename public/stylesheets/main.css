@@ -13,11 +13,38 @@ html {
   Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+body {
+  margin:0;
+  padding: 0;
+  /* display: grid; */
+  text-align: center;
+  background-color: #00a9a5;
+  font: white;
+}
+
+/* nav.flight-menu {
+  display: flex;
+  flex-direction: row;
+} */
 
 body > nav {
-  background-color: blanchedalmond;
+  background-color: #90c2E7;
   display:flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0 20px 0 30px;
+  height:60px;
+}
+
+.meal-link {
+  padding: 0 10px 0 10px;
+}
+
+.add-flight-link {
+  padding: 0 10px 0 10px;
+}
+
+.all-flights-link {
+  padding: 0 10px 0 10px;
 }

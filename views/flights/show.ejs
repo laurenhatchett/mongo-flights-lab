@@ -6,8 +6,8 @@
   <div>
   <h1><%= title %></h1>
   </div>
-  <section>
-    <div class="table">
+  <section class="flight-info">
+    <div class="flight-table">
       <table>
         <thead>
           <tr>
@@ -32,10 +32,10 @@
         <button>Edit Flight</button>
       </a>
   </section>
-  <section>
+  <section class="add-tickets">
   </div>
   <h2>Add Tickets</h2>
-  <div>
+  <div class="ticket-table">
     <% if (flight.tickets.length) { %>
       <table>
         <thead>
@@ -76,7 +76,8 @@
   </form>
   </section>
   
-  <div>Meals:</div>
+  <div class="meals">
+    <h2>Meals:</h2>
     <ul>
         <% flight.meals.forEach(meal => { %>
           <li><%= meal.name %></li>
@@ -92,6 +93,7 @@
     </select>
   <button type="submit">Add Meal</button>
   </form>
+</div>
 </main>
 
 

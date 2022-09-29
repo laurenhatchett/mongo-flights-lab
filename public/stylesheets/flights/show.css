@@ -1,0 +1,41 @@
+main {
+  background-color: #00a9a5;
+  color: white;
+  display: grid;
+}
+
+section.flight-info {
+  color: white;
+  margin: 10px;
+}
+
+div.flight-table {
+  background-color: #092327;
+  color: white;
+}
+
+/* table {
+  align-items: center;
+} */
+
+h1{
+  font-size: 40px;;
+}
+
+h2{
+  font-size: 25px;
+}
+
+section.add-tickets {
+  background-color: #4e8098;
+  margin: 10px;
+}
+
+div.ticket-table {
+  background-color: #4e8098;
+}
+
+div.meals {
+  margin: 10px;
+  background-color: #0b5351;
+}
